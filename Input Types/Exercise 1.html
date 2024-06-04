@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Exercise 1 </title>
+</head>
+
+
+<script>
+function validateFunction(){
+var x = document.getElementById("fullname").value;
+if(x==""){
+alert("Please enter a valid name.")
+}
+else{
+alert("Hello, "+x + ".");
+}
+}
+</script>
+
+<body>
+
+
+
+<h1> Say your name! </h1>
+<p> Your name: <input type="text" size="40" maxlength="30" id="fullname"> </input> </p>
+<button type="button" onclick="validateFunction()">Click here!</button>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Exercise 2 </title>
+</head>
+
+<body>
+<h1> Character Generator </h1>
+<p> Enter a number: </p> <input id="inputnumber"> </input>
+<p> Enter a character: </p> <input id="inputchar"> </input>
+<button type="button" onclick="generateCharacter()">Generate</button>
+<button type="button" onclick="generateCharacterInverse()">Generate Inverse</button>
+
+<script>
+function generateCharacter(){
+var inputN=document.getElementById("inputnumber").value;
+var c=document.getElementById("inputchar").value;
+var n=parseInt(inputN);
+
+for(var i=0;i<n;i++){
+	for(var j=0;j<=i;j++){
+		document.write(c);
+	}
+	document.write("<br>");
+}
+}
+
+function generateCharacterInverse(){
+var inputN=document.getElementById("inputnumber").value;
+var c=document.getElementById("inputchar").value;
+var n=parseInt(inputN);
+
+for(var i=n;i>0;i--){
+	for(var j=i-1;j>=0;j--){
+		document.write(c);
+	}
+	document.write("<br>");
+}
+}
+</script>
+
+
+</body>
+</html>

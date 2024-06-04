@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title> Exercise 5 </title>
+</head>
+
+
+<body>
+<h1> Array To Table </h1>
+
+<script>
+var students= [
+ { name: "Andy", id: 001, major: "Computer Science" },
+ { name: "Ben", id: 002, major: "Biology" },
+ { name: "Hari", id: 003, major: "Computer Science" },
+ { name: "Lisa", id: 004, major: "Physic" },
+ { name: "Wendy", id: 005, major: "Math" }
+ ];
+
+document.write("<table border>");
+document.write("<tr>");
+document.write("<th>"+"ID"+"</th>");
+document.write("<th>"+"Name"+"</th>");
+document.write("<th>"+"Major"+"</th>");
+document.write("</tr>");
+
+for(var rownum=0;rownum<students.length;rownum++){
+	document.write("<tr>");
+	document.write("<td>" + students[rownum].id + "</td>"); 
+	document.write("<td>" + students[rownum].name + "</td>"); 
+	document.write("<td>" + students[rownum].major + "</td>"); 
+	document.write("</tr>");
+}
+
+document.write("</table>");
+
+</script>
+</body>
+</html>

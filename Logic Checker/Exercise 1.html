@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Exercise 1 </title>
+</head>
+
+<body>
+<h1> Fibonacci Sequence Generator </h1>
+<p> Enter a number: </p> <input id="numberN"> </input>
+<button type="button" onclick="generateFibonacci()">Generate</button>
+<p id="output"></p>
+
+<script>
+function generateFibonacci(){
+var x=document.getElementById("numberN").value;
+var n=parseInt(x);
+
+var loop=[0,1];
+var n1=0;
+var n2=1;
+
+if(n==0){
+loop=[0];
+}
+else{
+for(var i=2;i<=n;i++){
+var n3=n1+n2;
+loop.push(n3);
+n1=n2;
+n2=n3;
+}
+}
+
+document.getElementById("output").innerHTML="Fibonacci sequence: "+ loop;
+}
+</script>
+</body>
+</html>

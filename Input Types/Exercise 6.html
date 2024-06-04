@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<title> Exercise 6 </title>
+</head>
+
+<body>
+<h1> Login </h1>
+Username: <input type="text" id="usernameinput"> <br>
+Password: <input type="text" id="passwordinput"> <br>
+<button type="button" onclick="verifyLogin()">Login </button>
+
+<script>
+var username=["user1","user2","user3"];
+var password=["username-111","user2-222","user3-333"];
+
+function verifyLogin(){
+var verifyUser=document.getElementById("usernameinput").value;
+var verifyPW=document.getElementById("passwordinput").value;
+
+if(verifyUser==username[0]&&verifyPW==password[0]||verifyUser==username[1]&&verifyPW==password[1]||verifyUser==username[2]&&verifyPW==password[2]){
+alert("Login successful.");
+}
+else if (verifyUser==username[0]&&verifyPW!=password[0]||verifyUser==username[1]&&verifyPW!=password[1]||verifyUser==username[2]&&verifyPW!=password[2]){
+alert("Incorrect password.");
+}else if (verifyUser!=username[0]||verifyUser!=username[1]||verifyUser!=username[2]){
+alert("Invalid username.");
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<title> Exercise 4 </title>
+</head>
+
+<script>
+
+function createList(){
+var items=document.getElementsByTagName("input");
+var list="";
+
+	for(var i=0;i<items.length;i++){
+		if(items[i].checked==true){
+			list+=items[i].value+"\n";
+		}
+	}
+alert("You have bought the following items: "+ "\n"+list);
+}
+
+</script>
+
+<body>
+<h1> Grocery List </h1>
+<p1> Please check the items you are buying: </p1>
+<br>
+
+<form>
+<input type="checkbox" value="milk"> Milk </input><br>
+<input type="checkbox" value="cheese"> Cheese </input><br>
+<input type="checkbox" value="apples"> Apples </input><br>
+<input type="checkbox" value="water"> Water </input><br>
+<input type="checkbox" value="bananas"> Bananas<br>
+<input type="checkbox" value="meat"> Meat </input><br> 
+<input type="checkbox" value="carrots"> Carrots </input><br>
+<button type="button" onclick="createList()">Checkout</button>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Exercise 2 </title>
+</head>
+
+<body>
+
+<h1> Calculator </h1>
+<p> Number 1: </p><input id ="number1"> </input>
+<p> Number 2: </p> <input id ="number2"> </input> 
+<br>
+<button type="button" onclick="addFunction()"> Addition </button>
+<button type="button" onclick="subtractFunction()"> Subtraction </button>
+<button type="button" onclick="multiplyFunction()"> Multiplication</button>
+<button type="button" onclick="divisionFunction()"> Division </button>
+
+<p id="solution"></p>
+
+<script>
+
+function addFunction(){
+var x = document.getElementById("number1").value;
+var y = document.getElementById("number2").value;
+
+var operand1=parseInt(x);
+var operand2=parseInt(y);
+var sum=operand1+operand2;
+
+document.getElementById("solution").innerHTML = "Result: "+sum;
+}
+function addFunction(){
+var x = document.getElementById("number1").value;
+var y = document.getElementById("number2").value;
+
+var operand1=parseInt(x);
+var operand2=parseInt(y);
+var sum=operand1+operand2;
+
+document.getElementById("solution").innerHTML = "Result: "+sum;
+}
+
+function subtractFunction(){
+var x = document.getElementById("number1").value;
+var y = document.getElementById("number2").value;
+
+var operand1=parseInt(x);
+var operand2=parseInt(y);
+var diff=operand1-operand2;
+
+document.getElementById("solution").innerHTML = "Result: "+diff;
+}
+
+function multiplyFunction(){
+var x = document.getElementById("number1").value;
+var y = document.getElementById("number2").value;
+
+var operand1=parseInt(x);
+var operand2=parseInt(y);
+var product=operand1*operand2;
+
+document.getElementById("solution").innerHTML = "Result: "+product;
+}
+
+function divisionFunction(){
+var x = document.getElementById("number1").value;
+var y = document.getElementById("number2").value;
+
+var operand1=parseInt(x);
+var operand2=parseInt(y);
+var quotient=operand1/operand2;
+
+document.getElementById("solution").innerHTML = "Result: "+quotient;
+}
+</script>
+</body>
+</html>

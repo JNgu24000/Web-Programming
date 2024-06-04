@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Exercise 4 </title>
+</head>
+
+<body>
+<h1> Palindrome Checker </h1>
+<p> Enter a word: </p> <input id="input"> </input>
+<button type="button" onclick="checkPalindrome()">Check</button>
+<p id="output"></p>
+
+
+<script>
+function checkPalindrome(){
+var test=document.getElementById("input").value;
+var len=test.length-1;
+var result=test + " is a palindrome.";
+
+
+
+for(var i=0;i<len/2;i++){
+var str1=test[i];
+var str2=test[len-i];
+if(str1!=str2){
+result = test + " is not a palindrome.";
+}
+}
+document.getElementById("output").innerHTML= result;
+}
+
+
+</script>
+</body>
+</html>
